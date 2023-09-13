@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHONES_MARKETE", "PHONES_MARKETE\PHONES_MARKETE.csproj", "{E3838439-A07A-4E82-83BC-2F99D08AEA7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bl", "Bl\Bl.csproj", "{D9F98922-3D68-464D-ACE7-B534F134EA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains", "Domains\Domains.csproj", "{4C196721-8269-4949-B4B8-142DD1BF5E8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3838439-A07A-4E82-83BC-2F99D08AEA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3838439-A07A-4E82-83BC-2F99D08AEA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3838439-A07A-4E82-83BC-2F99D08AEA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3838439-A07A-4E82-83BC-2F99D08AEA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F98922-3D68-464D-ACE7-B534F134EA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F98922-3D68-464D-ACE7-B534F134EA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F98922-3D68-464D-ACE7-B534F134EA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F98922-3D68-464D-ACE7-B534F134EA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C196721-8269-4949-B4B8-142DD1BF5E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C196721-8269-4949-B4B8-142DD1BF5E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C196721-8269-4949-B4B8-142DD1BF5E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C196721-8269-4949-B4B8-142DD1BF5E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B84E8C-88F7-4E94-AD09-9AF2D979F45C}
+	EndGlobalSection
+EndGlobal

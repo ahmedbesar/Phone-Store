@@ -1,0 +1,182 @@
+﻿@model VmHomePage
+<!-- Home slider -->
+
+
+
+
+
+<section class="p-0">
+    <div class="slide-1 home-slider">
+
+        @foreach (var slider in Model.lstSliders)
+        {
+            <div>
+                <div class="home  text-center">
+                    <img src="~/Uploads/Sliders/@slider.ImageName" alt="" class="bg-img blur-up lazyload">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="slider-contain">
+                                    <div>
+
+                                        <h1>@slider.Title</h1>
+                                        <h4>@slider.Description</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+
+
+    </div>
+</section>
+<!-- Home slider end -->
+<!-- collection banner -->
+<section class="banner-padding banner-furniture ratio2_1">
+
+    <div class="title1 section-t-space">
+        <h4>Categories</h4>
+        <h2 class="title-inner1">Choose Your Favourite Category</h2>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row partition4">
+            @foreach (var category in Model.lstCategories)
+            {
+                <div class="col-lg-3 col-md-6">
+                    <a asp-controller="Items" asp-action="ItemsByCatId" asp-route-id="@category.CategoryId">
+                        <div class="collection-banner p-right text-right">
+                            <div class="img-part">
+                                <img src="~/Uploads/Categories/@category.CategoryImage"
+                                     class="img-fluid blur-up lazyload bg-img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- collection banner end -->
+<!-- Paragraph-->
+<div class="title1 section-t-space">
+    <h4>special offer</h4>
+    <h2 class="title-inner1">top collection</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="product-para">
+                <p class="text-center">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Paragraph end -->
+<!-- Product slider -->
+<section class="section-b-space p-t-0 ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="product-4 product-m no-arrow">
+                    @foreach (var item in Model.lstAllItems)
+                    {
+                        <div class="product-box">
+                            <partial name="ItemBox" model="@item" />
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product slider end -->
+<!-- Parallax banner -->
+<section class="p-0">
+    <div class="full-banner parallax text-center p-left">
+        <img src="~/Uploads/Midle_Baner/banner.jpg" alt="" class="bg-img blur-up lazyload">
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="banner-contain">
+                        <h2>2023</h2>
+                        <h3>Fancy Phones</h3>
+                        <h4>Special Offers</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Parallax banner end -->
+<!-- Tab product -->
+<div class="title1 section-t-space">
+    <h4>exclusive products</h4>
+    <h2 class="title-inner1">special products</h2>
+</div>
+<section class="section-b-space p-t-0 ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="theme-tab">
+                    <ul class="tabs tab-title">
+                        <li class="current"><a href="tab-4">New Products</a></li>
+                        <li class=""><a href="tab-5">Recommended Products</a></li>
+                        <li class=""><a href="tab-6">Best Sellers</a></li>
+                    </ul>
+                    <div class="tab-content-cls">
+                        <div id="tab-4" class="tab-content active default">
+                            <div class="no-slider row">
+                                @foreach (var item in Model.lstNewItems)
+                                {
+                                    <div class="product-box">
+                                        <partial name="ItemBox" model="@item" />
+                                    </div>
+                                }
+
+
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-content">
+                            <div class="no-slider row">
+                                @foreach (var item in Model.lstRecommendedItems)
+                                {
+                                    <div class="product-box">
+                                        <partial name="ItemBox" model="@item" />
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-content">
+                            <div class="no-slider row">
+                                @foreach (var item in Model.lstBestSellers)
+                                {
+                                    <div class="product-box">
+                                        <partial name="ItemBox" model="@item" />
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tab product end -->
